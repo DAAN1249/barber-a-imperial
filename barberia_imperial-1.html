@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbería Imperial</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,Helvetica,sans-serif;background:#111;color:#f5f5f5;line-height:1.6}
+  .hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 20px;background:linear-gradient(135deg,#111,#252525)}
+  .hero-box{max-width:760px}
+  .tag{color:#d4af37;letter-spacing:3px;text-transform:uppercase;font-size:14px;font-weight:bold}
+  h1{font-size:clamp(42px,9vw,78px);margin:12px 0 8px;text-transform:uppercase;letter-spacing:2px}
+  .subtitle{font-size:20px;color:#ddd;margin-bottom:28px}
+  .btn{display:inline-block;background:#d4af37;color:#111;text-decoration:none;padding:14px 24px;border-radius:8px;font-weight:bold;margin:6px;transition:.2s}
+  .btn:hover{transform:translateY(-2px);background:#f0cf55}
+  .btn.secondary{background:transparent;color:#fff;border:1px solid #555}
+  section{padding:55px 20px;max-width:1050px;margin:auto}
+  h2{text-align:center;font-size:32px;margin-bottom:30px}
+  .gold{color:#d4af37}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:25px}
+  .gallery img{width:100%;height:280px;object-fit:cover;border-radius:12px;border:1px solid #333;display:block}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{background:#1d1d1d;border:1px solid #333;border-radius:12px;padding:24px}
+  .card h3{margin-bottom:8px}
+  .price{color:#d4af37;font-size:20px;font-weight:bold}
+  .about{background:#181818;max-width:none}
+  .about-inner{max-width:900px;margin:auto;text-align:center}
+  .contact{text-align:center}
+  .info{margin:10px 0;color:#ccc}
+  footer{text-align:center;padding:25px;background:#0b0b0b;color:#888;font-size:14px}
+  @media(max-width:600px){section{padding:45px 16px}.hero{min-height:65vh}.btn{width:90%;max-width:320px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-box">
+    <div class="tag">Estilo • Precisión • Confianza</div>
+    <h1>Barbería Imperial</h1>
+    <p class="subtitle">Tu estilo, nuestra pasión.</p>
+    <a class="btn" href="https://wa.me/573001234567?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20Barber%C3%ADa%20Imperial." target="_blank">💬 Reservar por WhatsApp</a>
+    <a class="btn secondary" href="#servicios">Ver servicios</a>
+  </div>
+</header>
+
+<section>
+  <h2>Conoce nuestro <span class="gold">trabajo</span></h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85" alt="Barbero realizando un corte">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85" alt="Interior de una barbería">
+    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85" alt="Barbero trabajando">
+  </div>
+</section>
+
+<section id="servicios">
+  <h2>Nuestros <span class="gold">servicios</span></h2>
+  <div class="services">
+    <div class="card"><h3>✂️ Corte clásico</h3><p>Un corte limpio y tradicional, adaptado a tu estilo.</p><p class="price">$20.000</p></div>
+    <div class="card"><h3>💈 Corte moderno</h3><p>Fade, degradados y estilos actuales.</p><p class="price">$25.000</p></div>
+    <div class="card"><h3>🧔 Corte + barba</h3><p>El combo completo para salir impecable.</p><p class="price">$35.000</p></div>
+    <div class="card"><h3>🪒 Arreglo de barba</h3><p>Perfilado y acabado profesional.</p><p class="price">$15.000</p></div>
+  </div>
+</section>
+
+<div class="about">
+  <section class="about-inner">
+    <h2>Sobre <span class="gold">nosotros</span></h2>
+    <p>En Barbería Imperial combinamos técnicas modernas, atención personalizada y un ambiente cómodo para que cada visita sea una experiencia.</p>
+  </section>
+</div>
+
+<section class="contact">
+  <h2>Visítanos</h2>
+  <p class="info">📍 Pasto, Nariño</p>
+  <p class="info">🕐 Lunes a sábado: 9:00 AM – 7:00 PM</p>
+  <p class="info">📸 Instagram: @barberiaimperial</p>
+  <a class="btn" href="https://wa.me/573001234567?text=Hola%2C%20quiero%20reservar%20una%20cita." target="_blank">Reservar cita</a>
+</section>
+
+<footer>© 2026 Barbería Imperial · Todos los derechos reservados</footer>
+
+</body>
+</html>
